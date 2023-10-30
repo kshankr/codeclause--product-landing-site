@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepsi Website Loading Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img src="logo (1).png" class="logo"></a>
+            <ul>
+                <li><a href="https://www.pepsi.com/">Home</a></li>
+                <li><a href="https://www.pepsi.com/#!products">Products</a></li>
+                <li><a href="https://www.pepsi.com/#!">Whats New</a></li>
+                <li><a href="https://contact.pepsico.com/pepsi/terms-conditions">Terms&Condition</a></li>
+                <li><a href="https://contact.pepsico.com/pepsi">Contact</a></li>
+                
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>That's What <br><span>I Like</span></h2>
+                <p>For the passionate Pepsi lovers, there's nothing quite like the exhilarating experience of cracking open a cold can or sipping from a refreshing bottle of their favorite soda. With its distinct and iconic taste, Pepsi tantalizes the taste buds with a perfect balance of sweetness and fizz, leaving a delightful sensation that lingers long after the last drop. Whether it's paired with a savory meal, shared among friends during a lively gathering, or enjoyed solo as a moment of pure indulgence, Pepsi is more than just a beverage; it's a beloved companion that brings joy and satisfaction to every occasion. From the effervescent bubbles that tickle the senses to the familiar logo that evokes feelings of nostalgia and happiness, being a Pepsi lover is not just a preference, it's a way of life, a bubbly celebration of the simple pleasures that make every day extraordinary</p>
+                <a href="https://www.pepsi.com/#!products">View All Products</a>
+            </div>
+            <div class="imgBox">
+                <img src="pepsi001.png" class="pepsi">
+            </div>
+
+        </div>
+        <ul class="thumb">
+            <li><img src="pepsi001.png" onclick="imgSlider('pepsi001.png'); changeBgColor('#0062be')" ></li>
+            <li><img src="pepsi002.png" onclick="imgSlider('pepsi002.png'); changeBgColor('#e60c2c')" ></li>
+            <li><img src="pepsi003.png" onclick="imgSlider('pepsi003.png'); changeBgColor('#1e1e1e')" ></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="https://m.facebook.com/people/Pepsi-India/100071803954230/"><img src="facebook.png"></a></li>
+            <li><a href="https://twitter.com/PepsiIndia?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="twitter.png"></a></li>
+            <li><a href="https://www.instagram.com/pepsiindia/"><img src="instagram.png"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.pepsi').src = anything;
+        }
+        function  changeBgColor(color){
+            const sec = document.querySelector('.sec')
+            sec.style.background = color;
+        }
+    </script> 
+    
+</body>
+</html>
